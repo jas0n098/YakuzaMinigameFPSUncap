@@ -22,7 +22,6 @@ static void InitASI()
 	// Uncap minigames which did not need to be capped
 	{
 		pattern( "74 03 C6 ? 02 FF 05 ? ? ? ?" ).count(16).for_each_result( [] ( pattern_match match ) {
-			//printf("%p\n", match.get<void>(5));
 			Nop( match.get<void>(5), 6 );
 		} );
 	}
