@@ -10,7 +10,7 @@
 
 #include "Utils/MemoryMgr.h"
 #include "Utils/Patterns.h"
-
+#include "Utils/ScopedUnprotect.hpp"
 
 static void InitASI()
 {
